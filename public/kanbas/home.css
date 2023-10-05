@@ -843,3 +843,7 @@
   width: 70px;
   margin-right: 10px;
 }
+
+.card-body a {
+  text-decoration: none;
+}
