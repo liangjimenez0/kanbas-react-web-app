@@ -1,0 +1,845 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  height: 100vh;
+}
+
+.wd-kanbas-navigation li {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation li.wd-profile-white a i {
+  color: grey;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-course-navigation {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  width: 120px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.wd-course-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+
+.wd-course-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-course-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-course-navigation li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+}
+
+.wd-account-navigation {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  width: 200px;
+  margin: 0px;
+  margin-left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.wd-account-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+
+.wd-account-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-account-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-account-navigation li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.wd-profile-screen a {
+  color: red;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.wd-profile-screen i.wd-profile-icon {
+  font-size: 7em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.wd-profile-screen h2 {
+  margin-top: 40px;
+}
+
+.wd-header-profile {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.wd-profile-screen a button {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 0px;
+  border-radius: 7px;
+}
+
+.btn-primary.override-bs {
+  background-color: #a90dfd;
+
+  border-color: #fd0d51;
+
+  border-width: 10px;
+
+  border-radius: 20px;
+
+  border-style: dashed;
+
+  font-size: 2em;
+
+  font-weight: bolder;
+}
+
+.wd-profile-edit p.wd-header-profile {
+  padding-top: 30px;
+}
+
+.wd-profile-edit i.wd-profile-icon {
+  font-size: 7em;
+  margin-bottom: 10px;
+}
+
+.mb-3 label {
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-top: 0px;
+}
+
+.wd-profile-edit h3 {
+  padding-top: 30px;
+}
+
+.wd-profile-edit a {
+  color: red;
+  text-decoration: none;
+}
+
+.cancel-editing-button button {
+  margin-left: 10px;
+}
+
+.wd-dashboard h1 {
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.published-courses {
+  margin-left: 40px;
+}
+
+.dashboard-title {
+  margin-left: 20px;
+}
+
+.wd-dashboard hr {
+  width: 100%;
+}
+
+.wd-bg-color-black {
+  background-color: black;
+}
+
+.wd-profile-edit button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.card {
+  width: 250px;
+  margin-left: 40px;
+}
+
+.card-body a {
+  color: gray;
+  padding-top: 5px;
+  margin-top: 40px;
+}
+
+.card-body h5 {
+  font-size: 0.9em;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.card-body p {
+  color: grey;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+.wd-bg-color-green {
+  background-color: green;
+}
+
+.wd-text-color-yellow {
+  color: #ffff07;
+}
+.wd-text-color-blue {
+  color: #7070ff;
+}
+.wd-text-color-red {
+  color: #ff7070;
+}
+.wd-text-color-green {
+  color: green;
+}
+
+.breadcrumb-item i {
+  /* margin-left: 10px; */
+  font-size: 1.1em;
+  margin-top: 4px;
+  padding-right: 10px;
+  color: red;
+}
+
+.breadcrumb-item {
+  margin-left: 20px;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.breadcrumb-item button {
+  margin-left: auto;
+  float: right;
+}
+
+.color-red {
+  color: red;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.wd-header-profile p i {
+  color: red;
+  font-size: 1.6em;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.card-img-top i {
+  color: white;
+  padding: 0px;
+  /* padding-left: 190px; */
+  margin-left: 250px;
+  padding-bottom: 130px;
+  padding-top: 10px;
+}
+
+.text-body-secondary {
+  font-size: 0.7em;
+}
+
+.home-page-module-title {
+  font-weight: 500;
+}
+
+.home-page-module-item {
+  margin-left: 10px;
+  padding-right: 100px;
+  font-weight: 500;
+}
+
+.home-page-module-subitems li {
+  padding-left: 80px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 4px solid green;
+  padding-top: 20px;
+}
+
+.home-page-module-subitems p {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 0px;
+}
+
+.home-page-module-subitems li span {
+  padding-left: 250px;
+}
+
+.home-page-module-links li a {
+  text-decoration: none;
+  color: red;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.home-page-module-links li {
+  border-left: 4px solid green;
+}
+
+.home-titles li {
+  border-left: 4px solid green;
+}
+
+.link-icon {
+  padding: 0px;
+  padding-right: 20px;
+  color: green;
+}
+
+.wd-home-screen {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.wd-home-screen li {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.course-status {
+  padding-left: 45px;
+  margin-top: 8px;
+  margin-right: 5px;
+  width: 350px;
+}
+
+.course-status a button {
+  margin-top: 8px;
+  width: 240px;
+  text-align: left;
+}
+
+.top-buttons {
+  margin-bottom: 12px;
+}
+
+.course-status h6 {
+  margin-top: 10px;
+  padding-top: 10px;
+  /* padding-right: 150px; */
+}
+
+.search-for-assignments {
+  width: 5%;
+  /* padding-right: 500px; */
+}
+
+.menu-when-screen-small {
+  padding: 10px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.center-on-menu {
+  text-align: center;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.center-on-menu p {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 275;
+}
+
+.icons-on-menu i {
+  padding-right: 5px;
+}
+
+.assignment-edit {
+  width: 100%;
+}
+
+.body-assignment-edit {
+  margin-right: 30px;
+  align-items: center;
+}
+
+.body-assignment-edit div {
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.wd-arrow {
+  font-size: 0.8em;
+}
+
+.icon-arrow-profile-edit i {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.profile-edit-x {
+  padding-left: 5px;
+  color: red;
+  padding-top: 10px;
+}
+
+.assignment-edit-label label {
+  font-size: 0.95em;
+  font-weight: 350;
+}
+
+.grades-table {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.grades-table-head tr th {
+  border-width: 1px;
+}
+
+.grades-table-body tr td {
+  border-width: 1px;
+}
+
+.title-of-table {
+  font-weight: 50;
+}
+
+.grades-input {
+  border-width: 0px;
+  background-color: blue;
+}
+
+.smaller-text-grades {
+  font-size: 0.9em;
+}
+
+.names-grades {
+  font-size: 0.9em;
+  width: 300px;
+}
+
+.btns-grades {
+  margin: 5px;
+}
+
+.search-bar-grades {
+  color: gray;
+}
+
+.dropdown-grades {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.wd-kanbas-navigation-small {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
+  padding-top: 90px;
+}
+
+.assignment-glasses {
+  padding: 0px;
+}
+
+.wd-kanbas-navigation-small li {
+  padding-left: 50px;
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.wd-kanbas-navigation-small li a i {
+  padding-right: 15px;
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* .wd-kanbas-navigation-small li a {
+  padding-right: 30px;
+  text-align: left;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+} */
+
+.wd-kanbas-navigation-small li.wd-profile-white a i {
+  color: grey;
+}
+
+.wd-kanbas-navigation-small li a {
+  color: red;
+  text-decoration: none;
+}
+
+.indent-small-nav {
+  padding-left: 50px;
+}
+
+.cancel-kanbas {
+  float: right;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.right-arrow {
+  margin-right: 10px;
+}
+
+.wd-text-color-black {
+  color: black;
+}
+
+.check-and-ellipsis i {
+  padding-left: 20px;
+}
+
+.home-coming-up li {
+  list-style: none;
+}
+
+.home-coming-up li i {
+  padding-right: 10px;
+  padding-top: 4px;
+  color: gray;
+}
+
+.home-coming-up li a {
+  text-decoration: none;
+  color: red;
+}
+
+.home-coming-up li p {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.view-calendar a {
+  text-decoration: none;
+  color: red;
+  font-size: 0.9em;
+}
+
+.view-calendar i {
+  padding-top: 3px;
+  padding-right: 8px;
+  color: gray;
+}
+
+.view-calendar {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-coming-up li i.color-red {
+  font-size: 0.9em;
+  color: red;
+}
+
+.wd-text-color-white {
+  color: white;
+}
+
+.wd-course-navigation-small {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.wd-course-navigation-small a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-course-navigation-small a i {
+  padding-right: 10px;
+}
+
+.wd-course-navigation-small li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-when-screen-small i {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.assignment-item i {
+  padding-right: 20px;
+  padding-left: 5px;
+  padding-top: 25px;
+}
+
+.assignment-item a {
+  padding-top: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.assignment-item p {
+  font-size: 0.8em;
+  padding-right: 300px;
+}
+
+.badge {
+  color: black;
+  border: 1px solid black;
+}
+
+.btns-assignment i {
+  padding: 8px;
+}
+
+.wd-assignments-page {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.input-grades {
+  border: 0px;
+  width: 5px;
+}
+
+.grades-table tr th {
+  border-bottom: 2px solid grey;
+}
+
+.grades-table {
+  padding-left: 20px;
+}
+
+.grades-header {
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.grades-header i {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.grades-header button {
+  margin-right: 5px;
+}
+
+.assignment-edit-element {
+  padding-bottom: 15px;
+}
+
+.chevron-icon i {
+  padding: 0px;
+  margin: -2px;
+}
+
+.chevron-icon {
+  padding-right: 15px;
+  padding-top: 22px;
+}
+
+.chevron-icon-title i {
+  padding: 0px;
+  margin: -2px;
+}
+
+.arrow-assignments {
+  padding: 5px;
+}
+
+.button-glasses button i {
+  color: red;
+  padding-right: 10px;
+}
+
+.button-glasses button {
+  /* margin-left: 800px; */
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.title-on-home p {
+  padding-left: 20px;
+}
+
+.online-entry-options {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.online-entry-options select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+.online-entry-options label {
+  margin-bottom: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.edit-item input {
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+.edit-item select {
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+.form-assignment-edit label {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.assignment-edit-element select {
+  width: 400px;
+}
+
+.assignment-edit-body-middle li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.points-label label {
+  padding-bottom: 10px;
+}
+
+.ag-label label {
+  padding-bottom: 15px;
+}
+
+.dga-label label {
+  padding-bottom: 50px;
+}
+
+.st-label label {
+  padding-bottom: 345px;
+}
+
+.sa-label label {
+  padding-bottom: 15px;
+}
+
+.assign-label label {
+  padding-top: 90px;
+}
+
+.buttons-assignment-1 {
+  margin-left: 300px;
+}
+
+.plus-assignment-edit button {
+  width: 400px;
+  margin: 0px;
+  margin-left: -40px;
+  margin-bottom: -10px;
+}
+
+.plus-assignment-edit i {
+  padding-right: 10px;
+}
+
+.group-calendar-assignment {
+  margin-left: -25px;
+  margin-top: -15px;
+}
+
+.label-assignment-edit {
+  margin-left: -40px;
+  margin-top: 15px;
+  padding-bottom: 0px;
+}
+
+.group-calendar-assignment-1 {
+  margin-left: -45px;
+  margin-top: -25px;
+  width: 80px;
+  padding: 0px;
+}
+
+.group-calendar-assignment-2 {
+  width: 70px;
+  margin-right: 10px;
+}
