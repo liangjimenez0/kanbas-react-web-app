@@ -154,7 +154,7 @@
 
 .course-status {
   padding-left: 45px;
-  margin-top: 8px;
+  margin-top: 20px;
   margin-right: 5px;
   width: 350px;
 }
@@ -616,18 +616,18 @@
 
 .search-for-assignments {
   width: 5%;
-  /* padding-right: 500px; */
+  margin-right: 400px;
 }
-
 .menu-when-screen-small {
   padding: 10px;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: -40px;
 }
 
 .center-on-menu {
   text-align: center;
-  padding: 0px;
+  padding: 20px;
+  width: 100%;
 }
 
 .center-on-menu p {
@@ -1077,6 +1077,8 @@
 .list-group-home-modules ul {
   border-color: white;
   border-radius: 0%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .list-group-home-modules {
@@ -1169,4 +1171,21 @@
 
 .card-link {
   text-decoration: none;
+}
+
+.courses-flex {
+  display: flex;
+}
+
+.top-of-home {
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 40px;
+}
+
+.buttons-assignments-top {
+  display: flex;
+  margin-bottom: 10px;
 }

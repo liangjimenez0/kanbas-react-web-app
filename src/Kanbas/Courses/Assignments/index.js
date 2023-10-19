@@ -14,7 +14,10 @@ function Assignments() {
   );
   return (
     <div class="wd-assignments-page">
-      <div class="row grades-header">
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="row grades-header flex-grow">
         <div class="input-group col mb-3 search-for-assignments">
           <input
             type="text"
@@ -22,21 +25,20 @@ function Assignments() {
             placeholder="Search for Assignments"
           />
         </div>
-        <div class="col">
+        <div class="col buttons-assignments-top">
           <button type="button" class="btn btn-light float-end">
-            <BsThreeDotsVertical />
+            <div class="wd-flex-row-container">
+              <AiOutlinePlus className="assignment-buttons" />
+              Group
+            </div>
           </button>
-
           <button type="button" class="btn btn-danger float-end">
             <div class="wd-flex-row-container">
               <AiOutlinePlus className="assignment-buttons" /> Assignment
             </div>
           </button>
           <button type="button" class="btn btn-light float-end">
-            <div class="wd-flex-row-container">
-              <AiOutlinePlus className="assignment-buttons" />
-              Group
-            </div>
+            <BsThreeDotsVertical />
           </button>
         </div>
         <hr />
@@ -46,10 +48,6 @@ function Assignments() {
         <div className="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-secondary home-page-module-title">
             <div class="wd-flex-row-container">
-              <div class="chevron-icon-title">
-                <i class="fa fa-ellipsis-v"> </i>
-                <i class="fa fa-ellipsis-v"> </i>
-              </div>
               <i class="fa fa-arrow-down arrow-assignments"> </i> ASSIGNMENTS
             </div>
 

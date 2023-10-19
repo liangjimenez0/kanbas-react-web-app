@@ -10,6 +10,8 @@ import { BsFillFileBarGraphFill } from "react-icons/bs";
 import { BsFillMegaphoneFill } from "react-icons/bs";
 import { AiFillBell } from "react-icons/ai";
 import { AiFillCalendar } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,8 +20,8 @@ function Home() {
         <div class="d-block d-md-none wd-bg-color-black menu-when-screen-small">
           <div class="wd-flex-row-container justify-content-between align-items-center">
             <div>
-              <a href="kanbas-navigation.html">
-                <i class="fa fa-bars wd-text-color-white"></i>
+              <a href="Kanbas/kanbas-navigation.html">
+                <FaBars className="wd-text-color-white" />
               </a>
             </div>
 
