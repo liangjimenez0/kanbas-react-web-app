@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <div className="list-group-home-modules">
       <div className="top-of-home">
-        {/* <br></br>
-        <br></br>
-        <br></br> */}
         <button type="button" class="btn btn-light float-end">
           <BsThreeDotsVertical />
         </button>
@@ -43,9 +49,44 @@ function ModuleList() {
         <hr />
         <br />
       </div>
+      <ul className="list-group edit-module-group">
+        <li className="list-group-item">
+          <input
+            className="form-control"
+            value={module.name}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, name: e.target.value }))
+            }
+          />
+          <textarea
+            className="form-control"
+            value={module.description}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, description: e.target.value }))
+            }
+          />
+          <span className="float-end add-and-update">
+            <button
+              className="btn btn-success"
+              onClick={() =>
+                dispatch(addModule({ ...module, course: courseId }))
+              }
+            >
+              Add
+            </button>
+            <button
+              className="btn btn-primary"
+              onClick={() => dispatch(updateModule(module))}
+            >
+              Update
+            </button>
+          </span>
+        </li>
+      </ul>
+
       <ul className="list-group list-group-home-modules">
         <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-secondary home-page-module-title">
-          <div class="wd-flex-row-container">Week 0 - INTRO</div>
+          <div class="wd-flex-row-container week-0-title">Week 0 - INTRO</div>
           <div class="check-and-ellipsis">
             <BsCheckCircleFill className="wd-text-color-green" />
             <BsThreeDotsVertical />
@@ -64,6 +105,20 @@ function ModuleList() {
                     {module.name}
                   </div>
                   <div className="check-and-ellipsis">
+                    <button
+                      className="btn btn-warning"
+                      onClick={() => dispatch(setModule(module))}
+                    >
+                      Edit
+                    </button>
+
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => dispatch(deleteModule(module._id))}
+                    >
+                      Delete
+                    </button>
+
                     <BsCheckCircleFill className="wd-text-color-green" />
                     <BsThreeDotsVertical />
                   </div>

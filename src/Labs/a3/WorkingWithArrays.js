@@ -1,5 +1,3 @@
-import ArrayIndexAndLength from "./ArrayIndexAndLength";
-import AddingAndRemovingDataToFromArrays from "./AddingAndRemovingDataToFromArrays";
 
 function WorkingWithArrays() {
   var functionScoped = 2;
