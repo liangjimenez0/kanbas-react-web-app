@@ -3,33 +3,45 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import db from "./Database";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import axios from "axios";
 
 function Kanbas() {
-  const [courses, setCourses] = useState(db.courses);
+  const [courses, setCourses] = useState([]);
+  const URL = "http://localhost:4000/api/courses";
+
   const [course, setCourse] = useState({
     name: "New Course",
     number: "New Course Number",
     startDate: new Date(),
     endDate: new Date(),
   });
-  const addCourse = () => {
-    setCourses([
-      { ...course, _id: new Date().getTime().toString() },
-      ...courses,
-    ]);
+  const addCourse = async () => {
+    const response = await axios.post(URL, course);
+    setCourses((currentCourses) => [response.data, ...currentCourses]);
     setCourse({ name: "" });
   };
-  const deleteCourse = (course) => {
+  const findAllCourses = async () => {
+    const response = await axios.get(URL);
+    setCourses(response.data);
+  };
+  useEffect(() => {
+    findAllCourses();
+  }, []);
+  const deleteCourse = async (course) => {
+    const response = await axios.delete(`${URL}/${course._id}`);
+
     setCourses(courses.filter((c) => c._id !== course._id));
   };
-  const updateCourse = (course) => {
+  const updateCourse = async (course) => {
+    const response = await axios.put(`${URL}/${course._id}`, course);
+
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
+          return response.data;
         }
         return c;
       })
