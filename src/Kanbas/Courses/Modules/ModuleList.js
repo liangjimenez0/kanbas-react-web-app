@@ -12,7 +12,6 @@ import {
   setModule,
   setModules,
 } from "./modulesReducer";
-import { createModule, findModulesForCourse } from "./client";
 import * as client from "./client";
 
 function ModuleList() {
@@ -29,15 +28,15 @@ function ModuleList() {
   };
 
   const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
+    client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
     });
   };
 
   useEffect(() => {
-    findModulesForCourse(courseId).then((modules) =>
-      dispatch(setModules(modules))
-    );
+    client
+      .findModulesForCourse(courseId)
+      .then((modules) => dispatch(setModules(modules)));
   }, [courseId]);
 
   const modules = useSelector((state) => state.modulesReducer.modules);
