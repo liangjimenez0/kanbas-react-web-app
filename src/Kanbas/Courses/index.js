@@ -17,7 +17,9 @@ function Courses() {
     name: "New Course",
   });
   const findCourseById = async (courseId) => {
-    const response = await axios.get(`${URL}/${courseId}`);
+    const response = await axios.get(
+      `https://kanbas-node-server-app-oigt.onrender.com/api/courses/${courseId}`
+    );
     setCourse(response.data);
   };
 
