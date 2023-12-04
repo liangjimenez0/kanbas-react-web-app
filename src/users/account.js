@@ -1,6 +1,6 @@
 import * as client from "./client";
-import React, { useState, useEffect } from "react";
-import { useNavigate, Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 function Account() {
   const { id } = useParams();
   const [account, setAccount] = useState(null);
@@ -20,7 +20,6 @@ function Account() {
     await client.signout();
     navigate("/project/signin");
   };
-
   useEffect(() => {
     if (id) {
       findUserById(id);
@@ -28,7 +27,6 @@ function Account() {
       fetchAccount();
     }
   }, []);
-
   return (
     <div className="w-50">
       <h1>Account</h1>
