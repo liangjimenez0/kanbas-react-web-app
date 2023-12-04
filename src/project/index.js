@@ -3,7 +3,7 @@ import Account from "../users/account";
 import UserTable from "../users/table";
 import Signup from "../users/signup";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Nav from "./Nav";
+import Nav from "./nav";
 function Project() {
   return (
     <div className="row">
